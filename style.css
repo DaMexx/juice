@@ -1,14 +1,80 @@
 * {
     margin: 0;
+
 }
+
+html {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: medium;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.link {
+    font-size: 18px;
+    line-height: 27px;
+    text-decoration: none;
+}
+
+
+
+/* header styles */
 
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 84px;
 }
 
+.header__link {
+    padding: 0 0 0 64px;
+}
 
+.header__link--basket {
+    padding: 0 64px 0 0;
+    margin-bottom: 3px;
+}
+
+.header__menu {}
+
+.header__logo {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-right: 139px;
+    margin-bottom: 28px;
+}
+
+.header__logo--img {
+    margin: 0;
+}
+
+.header__text {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.header__basket {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__basket-button {
+    padding: 0 55px 0 0;
+    margin-bottom: 13px;
+}
 
 .title {}
 
