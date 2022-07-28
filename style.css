@@ -7,6 +7,10 @@ html {
     font-family: 'Poppins';
     font-style: normal;
     font-size: medium;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    
 }
 
 .container {
@@ -21,6 +25,33 @@ html {
 }
 
 
+.title {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 76.8px;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33.6px;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px;
+    gap: 10px;
+    width: 226px;
+    height: 64px;
+    border-radius: 80px;
+}
+
+.button--filled {}
+
+.button--stroked {}
 
 /* header styles */
 
@@ -33,6 +64,9 @@ html {
 
 .header__link {
     padding: 0 0 0 64px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
 }
 
 .header__link--basket {
@@ -40,13 +74,13 @@ html {
     margin-bottom: 3px;
 }
 
-.header__menu {}
+/* .header__menu {} */
 
 .header__logo {
     position: relative;
     text-align: center;
     color: white;
-    margin-right: 139px;
+    margin-right: 143px;
     margin-bottom: 28px;
 }
 
@@ -76,6 +110,28 @@ html {
     margin-bottom: 13px;
 }
 
-.title {}
+/* section 'about' */
 
-.subtitle {}
+.about {
+    display: flex;
+    align-items: center;
+    padding: 80px 120px;
+}
+
+.about__information {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 2;
+
+}
+
+.about__title {}
+
+.about__subtitle {}
+
+.about__button {}
+
+.about__image {
+    z-index: 1;
+}
