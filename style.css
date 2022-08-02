@@ -108,8 +108,8 @@ html {}
     position: relative;
     text-align: center;
     color: white;
-    margin-right: 143px;
-    margin-bottom: 28px;
+    right: 71px;
+    bottom: 15px;
 }
 
 .header__logo--img {
@@ -142,39 +142,54 @@ html {}
 /* section 'about' */
 
 .about {
-    /* display: flex;
-    align-items: center; */
+    display: flex;
+    align-items: center;
     position: relative;
-    padding: 120px 0;
+    padding: 120px;
     height: 784px;
-    /* background-color: aqua; */
 }
 
 .about__information {
+    position: absolute;
     display: flex;
-    /* align-items: ; */
     justify-content: space-between;
     flex-direction: column;
+    z-index: 1;
+    top: 171px;
 }
 
 .about__title {
+    /* position: absolute; */
     /* margin-left: 80px;
     padding-bottom: 100px; */
 }
 
 .about__subtitle {
     /* margin-left: 80px; */
-
+    padding-top: 47px;
 }
 
 .about__button {
     /* margin-left: 80px; */
-
+    margin-top: 66px;
 }
 
-.about__image {}
+.about__image {
+    position: relative;
+    left: 317px;
+    top: 3px;
+    z-index: 0;
+    max-width: 100%;
+    height: auto;
+}
 
-.about__image--img {}
+.about__image--img {
+    /* position: relative; */
+    /* right: 120px; */
+    top: 3px;
+
+
+}
 
 
 /* solution section */
@@ -225,6 +240,7 @@ html {}
     display: flex;
     justify-content: center;
     padding-top: 151px;
+
 }
 
 .tastes__menu {
@@ -232,7 +248,8 @@ html {}
     justify-content: space-between;
     align-items: center;
     padding-top: 63px;
-    padding: 63px 120px 0 120px;
+    padding: 63px 120px 152px 120px;
+    /* padding-bottom: 152px; */
 }
 
 .tastes__item {
@@ -243,16 +260,14 @@ html {}
     padding: 38px;
     /* gap: 24px; */
     isolation: isolate;
-    width: 421px;
-    height: 335px;
+    max-width: 421px;
+    max-height: 335px;
     border: 2px solid #99D74C;
     border-radius: 48px;
     /* padding-top: 51px; */
 }
 
-.tastes__image {
-    
-}
+.tastes__image {}
 
 .tastes__inner-title {
     font-family: 'Poppins';
@@ -275,3 +290,88 @@ html {}
 }
 
 .tastes__item {}
+
+/* products styles */
+
+.products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #FFCF0E;
+    padding-top: 151px;
+    overflow: hidden;
+    padding-bottom: 151px;
+}
+
+.products__title {
+
+}
+
+.products__container {
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-top: 79px;
+    gap: 100px;
+}
+.products__container:last-child{
+
+}
+.products__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .products__item:first-child {} */
+
+.products__image {
+    position: relative;
+    width: 242px;
+    height: 360px;
+    background: #FFFFFF;
+    border-radius: 56px;
+}
+
+.products__image--bottle {
+    position: absolute;
+    top: 11%;
+    left: 33%;
+}
+
+
+.products__image--price {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+}
+.products__container{
+    padding-left: 119px;
+}
+.products__container:last-child{
+}
+.products__item:last-child{
+   
+}
+.products__description {
+    padding-top: 24px;
+    max-width: 242px;
+    max-height: 72px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    display: table;
+}
+
+.button-here {
+    /* width: 226px; */ 
+}
+.products__button{
+    margin-top: 23px;
+    height: 56px;
+    width: 192px;
+}
