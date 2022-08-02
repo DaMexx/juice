@@ -6,9 +6,19 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
+    box-sizing: border-box
 }
 
 html {}
+
+/* img{
+    width: 100%;
+    height: auto;
+} */
+/* image {
+    max-width: 100%;
+    height: auto;
+} */
 
 .container {
     max-width: 1600px;
@@ -49,6 +59,8 @@ html {}
 .button--filled {
     background: #FFCF0E;
     border-style: none;
+
+
 }
 
 .button--filled:hover {
@@ -60,6 +72,7 @@ html {}
     background: inherit;
     border: 2px solid #FFFFFF;
     border-radius: 80px;
+    width: 212px;
 }
 
 .button--stroked:hover {
@@ -100,7 +113,8 @@ html {}
 }
 
 .header__logo--img {
-    margin: 0;
+    max-width: 100%;
+    height: auto;
 }
 
 .header__text {
@@ -128,26 +142,136 @@ html {}
 /* section 'about' */
 
 .about {
-    display: flex;
-    align-items: center;
-    padding: 80px 120px;
+    /* display: flex;
+    align-items: center; */
+    position: relative;
+    padding: 120px 0;
+    height: 784px;
     /* background-color: aqua; */
 }
 
 .about__information {
     display: flex;
+    /* align-items: ; */
     justify-content: space-between;
     flex-direction: column;
-    z-index: 2;
+}
+
+.about__title {
+    /* margin-left: 80px;
+    padding-bottom: 100px; */
+}
+
+.about__subtitle {
+    /* margin-left: 80px; */
 
 }
 
-.about__title {}
+.about__button {
+    /* margin-left: 80px; */
 
-.about__subtitle {}
-
-.about__button {}
-
-.about__image {
-    z-index: 1;
 }
+
+.about__image {}
+
+.about__image--img {}
+
+
+/* solution section */
+
+.solution {
+    display: flex;
+
+    background-color: #B8E1F2;
+    /* flex-direction: row; */
+}
+
+.solution__image {
+    display: flex;
+}
+
+/* .solution__img{
+    max-width: 100%;
+} */
+
+.solution__information {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 167px 120px 0 38px;
+}
+
+.solution__title {}
+
+.solution__subtitle {
+    padding-top: 48px;
+}
+
+.solution__button {
+    margin-top: 66px;
+    margin-right: auto;
+}
+
+
+/* for test */
+
+.tastes {
+    display: flex;
+    flex-direction: column;
+}
+
+.tastes__title {
+    display: flex;
+    justify-content: center;
+    padding-top: 151px;
+}
+
+.tastes__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 63px;
+    padding: 63px 120px 0 120px;
+}
+
+.tastes__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 38px;
+    /* gap: 24px; */
+    isolation: isolate;
+    width: 421px;
+    height: 335px;
+    border: 2px solid #99D74C;
+    border-radius: 48px;
+    /* padding-top: 51px; */
+}
+
+.tastes__image {
+    
+}
+
+.tastes__inner-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    padding-top: 24px;
+}
+
+.tastes__inner-subtitle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.tastes__item {}
