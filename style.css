@@ -55,13 +55,13 @@ html {}
     width: 226px;
     height: 64px;
     border-radius: 80px;
+    cursor:pointer;
+    cursor: url(./images/header/cursor.png);
 }
 
 .button--filled {
     background: #FFCF0E;
     border-style: none;
-
-
 }
 
 .button--filled:hover {
@@ -139,7 +139,9 @@ html {}
     padding: 0 55px 0 0;
     margin-bottom: 13px;
 }
-
+.main{
+    overflow: hidden;
+}
 /* section 'about' */
 
 .about {
@@ -301,7 +303,7 @@ html {}
     align-items: flex-start;
     background-color: #FFCF0E;
     padding-top: 151px;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding-bottom: 151px;
 }
 
@@ -565,11 +567,11 @@ html {}
     opacity: 0.5;
 }
 
-.b {
+.footer__input-container {
     display: flex;
 }
 
-.a {
+.footer__button {
     display: flex;
     width: 140px;
     height: 49px;
@@ -635,3 +637,9 @@ html {}
     color: #FFFFFF;
     text-decoration: none;
 }
+
+
+@media (max-width:375px) {
+
+}
+
