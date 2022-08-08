@@ -163,17 +163,18 @@
     margin-top: 66px;
 }
 
-.about__image {
+.about__image-container{
     position: relative;
-    left: 317px;
+    /* left: 317px; */
     top: 3px;
     z-index: 0;
-    max-width: 100%;
-    height: auto;
+    /* max-width: 100%; */
+    height: 100%;
 }
 
-.about__image--img {
-    top: 3px;
+.about__image{
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -641,7 +642,22 @@
     .header__link--basket {
         display: none;
     }
-    .header__burger{
+
+    .header__burger {
         display: block;
+        padding: 0 20px;
+        order: 3;
     }
+
+    .header__logo {
+        right: 0px;
+        order: 2;
+    }
+
+    .header__basket-button {
+        margin-bottom: 0px;
+        padding: 0 20px;
+        order: 1;
+    }
+
 }
